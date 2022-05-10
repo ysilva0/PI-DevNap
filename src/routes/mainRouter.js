@@ -1,4 +1,4 @@
-const path = require('path')
+
 const express = require('express');
 const mainController = require('../controllers/mainController')
 const mainRouter = express.Router();
