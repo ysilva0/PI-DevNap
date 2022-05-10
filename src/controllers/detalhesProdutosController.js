@@ -1,8 +1,7 @@
-const path = require ('path')
 
 const detalhesProdutosController = {
     index: (req, res)=>{
-        res.sendFile(path.join(__dirname, '../views/detalhesProdutos.html'))
+        res.render('detalhesProdutos')
     }
 }
 
