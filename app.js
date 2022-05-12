@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 const mainRouter= require('../PI-DevNap/src/routes/mainRouter')
 const produtosRouter= require('../PI-DevNap/src/routes/produtosRouter')
-const detalhesProdutosRouter = require('../PI-DevNap/src/routes/detalhesProdutosRouter')
+const detailsRouter = require('../PI-DevNap/src/routes/detailsRouter')
 
 
 app.set('view engine', 'ejs')
@@ -17,8 +17,8 @@ app.use(express.json())
 
 
 app.use('/', mainRouter)
-app.use('/', produtosRouter )
-app.use('/', detalhesProdutosRouter)
+app.use('/produtos', produtosRouter )
+app.use('/details', detailsRouter)
 
 
 app.listen(3000, () => console.log('Aplicação rodando em http://localhost:3000'))

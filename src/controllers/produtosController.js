@@ -1,7 +1,7 @@
 
 const produtosController = {
     index: (req, res)=>{
-        res.render('categoria')
+        res.render('produtos')
     }
 }
 
