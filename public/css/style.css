@@ -11,3 +11,18 @@
 .neve-dorm { color: #F3F2F2; }
 .cinza-dorm { color: #8D8A8A; }
 /*-----------------------*/
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.banner {
+    width: 100%;
+    height: 620px;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
