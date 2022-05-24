@@ -1,8 +1,8 @@
 
-const mainController = {
+const MainController = {
     index: (req, res) => {
         res.render('home')
     }
 }
 
-module.exports= mainController;
+module.exports= MainController;

@@ -1,5 +1,5 @@
 
-const productsController = {
+const ProductsController = {
     index: (req, res)=>{
         res.render('products')
     },
@@ -8,4 +8,4 @@ const productsController = {
     }
 }
 
-module.exports= productsController;
+module.exports= ProductsController;
