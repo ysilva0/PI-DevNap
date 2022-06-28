@@ -10,29 +10,17 @@
 </head>
 
 <body>
-    <header>
-        <div class="left-header">
-            <img class="logo" src="/images/logo.png" alt="Logo DevNap">
-            <nav class="nav-header">
-                <ul class="nav-links">
-                    <li><a href="#">Novos Produtos</a></li>
-                    <li><a href="#">Mulher</a></li>
-                    <li><a href="#">Homem</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="account">
-            
-            <a href="/login">Minha Conta</a>
-            <a href="/search"><img src="/images/lupa.png" alt="Busca"></a>
-            <a href="/wishlist"><img src="/images/wishlist.png" alt="Lista de desejo"></a>
-            <a href="/cart"><img src="/images/carrinho.png" alt="Carrinho de compras"></a>
-        </div>
-    </header>
+
+    
+    <%- include('partials/header.ejs') %> 
+
+
     <main>
         <section class="banner">
-            <h1>Dê um cochilo</h1>
-            <button name="button">Compre agora"</button>
+            <div class="container-banner">
+                <h1 class="phrase-banner">Dê um cochilo.</h1>
+                <button name="button">Compre agora"</button>
+            </div>
         </section>
         <section class="main-container">
             <article class="main-1">

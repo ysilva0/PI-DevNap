@@ -3,7 +3,6 @@
 *{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -83,4 +82,17 @@ header {
     text-decoration: none;
     font-size: 22px;
     color: #3D3A3A;
+}
+
+
+
+.container-banner{
+    position: relative;
+    top: 50%;
+    margin-left: 80px;
+}
+
+.phrase-banner{
+    font-size: 56px;
+    font-family: 'Tienne';
 }
