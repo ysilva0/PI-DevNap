@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tienne:wght@700&display=swap');
 
 *{
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     margin:0;
     padding: 0;
@@ -14,6 +13,7 @@
 .carbono-dorm { color: #3D3A3A; }
 .neve-dorm { color: #F3F2F2; }
 .cinza-dorm { color: #8D8A8A; }
+.roxo-dorm { color: #785385}
 /*-----------------------*/
 
 header {
@@ -94,5 +94,63 @@ header {
 
 .phrase-banner{
     font-size: 56px;
-    font-family: 'Tienne';
+    font-family: 'Tienne', serif;
+    color: #785385;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+}
+
+.button-banner{
+    width: 352px;
+    height: 82px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    color: #785385;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-banner:hover{
+    transition: 1s;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 55px;
+}
+
+.main-1 img{
+    margin-right: 85px ;
+}
+
+.main-1 h2{
+    font-family: 'Tienne', serif;
+    font-size: 48px;
+    margin-bottom: 85px;
+}
+
+.main-1 p{
+    font-family: 'Roboto';
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.main-1 button{
+    width: 400px;
+    height: 47px;
+    background: #fff;
+    font-size: 17px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.main-1 button:hover{
+    transition: 1s;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
