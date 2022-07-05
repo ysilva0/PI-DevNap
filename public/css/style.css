@@ -176,15 +176,34 @@ header {
     margin: 35px 80px 20px 80px;
 }
 
-.categories p{
+.categories a{
     font-family: 'Tienne', serif;
+    text-decoration: none;
+    color: #3D3A3A;
+    font-size: 17px
+}
+
+.categories a:hover{
+    text-decoration: underline;
 }
 
 .card-1{
     margin: 0 0 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+}
+.card-3{
+    display: flex;
+    flex-direction: column;
 }
 .card-4{
-    margin: 0 80px 0 0
+    margin: 0 80px 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
@@ -228,6 +247,7 @@ footer button{
     text-transform: uppercase;
     background-color: #F0DBB1;
     border: none;
+    cursor: pointer;
 }
 
 .footer-bottom{
@@ -246,6 +266,16 @@ footer button{
 
 .footer-bottom li{
     color: #fff;
+}
+
+.footer-bottom a{
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover{
+    text-decoration: underline;
 }
 
 .payment-methods{
