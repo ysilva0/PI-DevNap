@@ -9,6 +9,10 @@ const users = getInfoDatabase('users')
 const pathUsersJSON = path.join(__dirname, "..", "database", "users.json")
 
 const usersController = {
+    index: (req, res) =>{
+        res.render('user')
+    },
+
     showLoginPage: (req, res) => {
         res.render('login')
     },
@@ -29,11 +33,11 @@ const usersController = {
             res.cookie('remember', userExists.email, { maxAge: 1000000 })
         }
 
-        return res.redirect('products')
+        return res.redirect('/')
     },
 
     showCreateUserPage: (req, res) => {
-        res.send('user-create-form')
+        res.render('user-create-form')
     },
 
     create: (req, res) => {
@@ -58,4 +62,4 @@ const usersController = {
     }
 }
 
-module.exports = UsersController
+module.exports = usersController
