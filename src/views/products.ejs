@@ -11,10 +11,28 @@
 
 <body>
     <%- include('partials/header.ejs') %>
-    <main>
-        <P>PRODUTOS</P>
-    </main>
-    <%- include('partials/footer.ejs') %>
+
+	<h2 class="products-title">Todos os produtos</h2>
+
+	<main>
+		<div class="card-product">
+			<% products.forEach((product) => { %>
+				<div>
+					<section>
+						<a href="/products/detail/<%= product.id %>">
+							<img src="/images/products/<%= product.image %>" alt="imagem do produto">
+							
+							<article>
+								<p><%= product.name %></p>
+								<h2><%= formatPrice(product.price) %></h2>
+							</article>
+						</a>
+					</section>
+				</div>
+			<% }) %>
+		</div>
+	</main>
+	<%- include('partials/footer.ejs') %>
 </body>
 
 </html>

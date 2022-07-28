@@ -4,8 +4,17 @@
   "name": "Sweater: Cachorros dançando",
   "description": "Combine referências vivas neste cardigan. Feito a partir de lã Merino para uma silhueta clássica. \r\nDistingue-se pela sua impressão de animação. ",
   "price": "189",
-  "discount": "5",
-  "image": "1659022646346.png",
+  "discount": "7",
+  "image": "1659040506596.png",
+  "category": "male"
+ },
+ {
+  "id": 2,
+  "name": "Jaqueta: Abstrata",
+  "description": "Um toque abstrato na sua rotina nunca que lhe fará mal.",
+  "price": "289",
+  "discount": "10",
+  "image": "1659041985603.png",
   "category": "male"
  }
 ]

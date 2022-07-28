@@ -11,7 +11,7 @@ const pathProductsJSON = path.join(
   "database",
   "products.json"
 );
-const SIZE_IMAGE_LIMIT_IN_BYTE = 200000;
+const SIZE_IMAGE_LIMIT_IN_BYTE = 20000000;
 
 const ProductsController = {
   index: (req, res) => {
