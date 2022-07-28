@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <%- include('partials/head', {title: 'Criar usuário'}) %>
-  <body>
-    <div>
-      <h2>Formulário de criação de usuários</h2>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar na Conta</title>
+    <link rel="stylesheet" href="/css/headerfooter.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+  <%- include('partials/header.ejs')%>
+  <main>
+    <div class="center">
+      <h1>Cadastrar-se</h1>
       <form action="/account/register" method="POST">
-        <div>
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" />
+        <div class="inputbox">
+          <input type="text" id="name" name="name" required="required">
+          <span>Nome</span>
         </div>
-
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" />
+        <div class="inputbox">
+          <input type="email" id="email" name="email" required="required">
+          <span>Email</span>
         </div>
-
-        <div>
-          <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" />
+        <div class="inputbox">
+          <input type="password" id="password" name="password" required="required">
+          <span>Senha</span>
         </div>
-
-        <button type="submit">Salvar</button>
+        <div class="inputbox">
+          <button type="submit" id="button" value="submit">Registrar</button>
+        </div>
       </form>
     </div>
-  </body>
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+
+
 </html>

@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head', {title: 'Login'}) %>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar na Conta</title>
+    <link rel="stylesheet" href="/css/headerfooter.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
 <body>
-  <form action="/account/login" method="POST">
-    <div>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email">
+  <%- include('partials/header.ejs')%>
+  <main>
+    <div class="center">
+      <img class="logo-card" src="/images/logo.png" alt="logo">
+      <form action="/account/login" method="POST">
+        <div class="inputbox">
+          <input type="email" id="email" name="email" required="required">
+          <span>Email</span>
+        </div>
+        <div class="inputbox">
+          <input type="password" id="password" name="password" required="required">
+          <span>Senha</span>
+        </div>
+        <div>
+          <label for="remember">Manter sessão de login</label>
+          <input type="checkbox" id="remember" name="remember">
+        </div>
+        <div class="inputbox">
+          <button type="submit" id="button" value="submit">Login</button>
+          <a href="/account/register">Não possuo conta</a>
+        </div>
+      </form>
     </div>
+  </main>
 
-    <div>
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password">
-    </div>
-
-    <div>
-      <label for="remember">Manter logado?:</label>
-      <input type="checkbox" id="remember" name="remember">
-    </div>
-
-    <button type="submit">Entrar</button>
-
-    <br>
-
-    <a href="/account/register">Cadastrar</a>
-  </form>
+  <%- include('partials/footer.ejs') %>
 </body>
+
+
 </html>
