@@ -4,9 +4,9 @@
   "name": "Sweater: Cachorros dançando",
   "description": "Combine referências vivas neste cardigan. Feito a partir de lã Merino para uma silhueta clássica. \r\nDistingue-se pela sua impressão de animação. ",
   "price": "189",
-  "discount": "7",
-  "image": "1659040506596.png",
-  "category": "male"
+  "discount": "5",
+  "category": "in-sale",
+  "image": "1659444855387.png"
  },
  {
   "id": 2,
@@ -15,6 +15,33 @@
   "price": "289",
   "discount": "10",
   "image": "1659041985603.png",
+  "category": "male"
+ },
+ {
+  "id": 3,
+  "name": "Pijama: Felpudo",
+  "description": "Um pijama felpudo e confortável para agraciar-se com a beleza natural de seu lar. Conforto em primeiro lugar.",
+  "price": "399",
+  "discount": "10",
+  "image": "1659445080008.png",
+  "category": "male"
+ },
+ {
+  "id": 4,
+  "name": "Sweater: Campo",
+  "description": "Uma arte do campo para você relembrar momentos fora do lar. Com ele você trás a beleza exterior pro seu dia.",
+  "price": "182",
+  "discount": "9",
+  "image": "1659609611897.png",
+  "category": "male"
+ },
+ {
+  "id": 5,
+  "name": "Calça: Fofa",
+  "description": "Uma calça confortável, ela descreve em conforto o que significa estar em casa.",
+  "price": "229",
+  "discount": "9",
+  "image": "1659609699136.png",
   "category": "male"
  }
 ]

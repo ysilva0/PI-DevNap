@@ -5,7 +5,7 @@ function auth(req, res, next) {
       return next();
     }
   
-    return res.send('Você não está logado no sistema')
+    return res.render('login')
   }
   
   module.exports = auth;

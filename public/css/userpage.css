@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tienne:wght@700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* paleta de cores */
+.verde-dorm { color: #417163; }
+.bege-dorm { color: #F0DBB1; }
+.carbono-dorm { color: #3D3A3A; }
+.neve-dorm { color: #F3F2F2; }
+.cinza-dorm { color: #8D8A8A; }
+.roxo-dorm { color: #785385}
+/*-----------------------*/
+
+
+main{
+    margin: 20px 80px 20px 80px
+}
+
+.hello-user{
+    width: 100%;
+    height: 120px;
+}
+
+.account-infos{
+    display: flex;
+    justify-content: space-between
+}
+
+
+.myaccount{
+    margin-bottom: 20px;
+}
+
+
+
+.photo img{
+    background-color: #F0DBB1;
+    border-radius: 50%;
+    padding: 17px;
+    margin-right: 07px;
+}
+
+.history{
+    font-size: 27px;
+    display: flex;
+    padding-top: 5px;
+}
+.history-data{
+    background-color: #3D3A3A;
+    width: 100%;
+    height: 400px;
+
+    color: #F0DBB1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -10,13 +10,21 @@ const pathUsersJSON = path.join(__dirname, "..", "database", "users.json")
 
 const usersController = {
     index: (req, res) =>{
-        res.render('user')
+        const userSession = req.user
+
+        res.render('user', {
+            userSession
+        })
     },
 
     showLoginPage: (req, res) => {
         res.render('login')
     },
 
+    cart: (req, res) => {
+        res.render('shoppingCart')
+    },
+    
     login: (req, res) => {
         const { email, password, remember } = req.body;
         const toRemember = Boolean(remember)

@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head', {title: "Painel do usuário"}) %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevNap - Dê um cochilo</title>
+        <link rel="stylesheet" href="/css/headerfooter.css">
+        <link rel="stylesheet" href="/css/userpage.css">
+    </head>
 
 <body>
     <%- include('partials/header') %>
     <main>
-        <section class="account">
-            <h2>MINHA CONTA</h2>
-            <div class="puchases_historic">
-                <a href="#"><img src="/public/images/camera-change.png" alt="Câmera"></a>
+        <h2 class="myaccount">MINHA CONTA</h2>
+        <section class="account-infos">
+            
+            <div class="history">
+                <a class='photo' href="#"><img src="/images/camera-change.png" alt="Câmera"></a>
                 <div class="hello-user">
-                    <h3>Olá
-                        <!--colocar código para identificar usuário -->
+                    <h3>Olá <%= userSession.name %>
+                        
                     </h3>
-                    <img src="/public/images/icon-mail.png" alt="Ícone email">
                     <h6>
-                        <!-- código para mostrar email -->
+                        <%= userSession.email %>
                     </h6>
                 </div>
-                <h1>HISTÓRICO DE COMPRAS</h1>
-                <h3>Consulte aqui as informações do seu pedido</h3>
             </div>
-            <div class="shopping_information">
-                <ul>
-                    <li>Nº Pedido</li>
-                    <li>Data</li>
-                    <li>Pagamento</li>
-                    <li>Status</li>
-                    <li>NFe</li>
-                </ul>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="/public/images/user.png">Meus dados</li>
-                    </a>
-                    <li>
-                        <a href="#">
-                            <img src="/public/images/carrinhoAdd.png">Histórico de compras</li>
-                    </a>
-                    <li>
-                        <a href="#">
-                            <img src="/public/images/money.png">Créditos</li>
-                    </a>
-                    <li>
-                        <a href="#">
-                            <img src="/public/images/creditCard.png">Pagamentos</li>
-                    </a>
-                </ul>
-            </nav>
-            <article class="customer-service">
-                <h4>ATENDIMENTO AO CLIENTE</h4>
-                <H3>SAC (11)99999-9999</H3>
-                <h3>Email: usuario@devnap.com.br</h3>
-                <h4>CHAT</h4>
-                <a href="#">
-                    <img src="/public/images/iconChat.png" alt="Chat">
-                </a>
-            </article>
+            
         </section>
+        <h1>HISTÓRICO DE COMPRAS</h1>
+                <h3>Consulte aqui as informações do seu pedido</h3>
 
+<div class="history-data">
+    <p>info aqui</p>
+</div>
+                <article class="customer-service">
+                    <h4>ATENDIMENTO AO CLIENTE</h4>
+                    <H3>SAC (11)99999-9999</H3>
+                    <h3>Email: usuario@devnap.com.br</h3>
+                    <h4>CHAT</h4>
+                    <a href="#">
+                        <img src="/images/iconChat.png" alt="Chat">
+                    </a>
+                </article>
     </main>
     <%- include('partials/footer') %>
 </body>

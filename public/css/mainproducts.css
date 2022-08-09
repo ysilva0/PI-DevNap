@@ -30,11 +30,15 @@
 /*-----------------------*/
 
 main {
-    margin: 0 0 0 80px;
+    margin: 0 80px 0 80px;
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
     font-family: "Roboto", cursive;
+}
+.product-area{
+    display: flex;
 }
 
 .card-product {
@@ -44,6 +48,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0 20px 0;
 }
 
 .card-product img {
@@ -55,4 +60,31 @@ main {
 .card-product a {
     color: #000;
     text-decoration: none;
+}
+
+.banner{
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/bannerMan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner div{
+    position: relative;
+    top: 70%;
+    color: #785385;
+    width: 324px;
+    height: 61px;
+    font-size: 22px;
+    background: rgba(255, 255, 255, 0.429);
+    text-align: center;
+    border-radius: 33.5px;
+    margin: 0 0 0 80px;
+    
+}
+
+.break{
+    flex-basis: 100%;
+    width: 0;
 }

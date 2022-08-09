@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevNap - Produtos</title>
-        <link rel="stylesheet" href="/css/headerfooter.css">
-        <link rel="stylesheet" href="/css/mainproducts.css">
-    </head>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevNap - Produtos</title>
+	<link rel="stylesheet" href="/css/headerfooter.css">
+	<link rel="stylesheet" href="/css/mainproducts.css">
+</head>
 
 <body>
-    <%- include('partials/header.ejs') %>
+	<%- include('partials/header.ejs') %>
 
-	<h2 class="products-title">Todos os produtos</h2>
-
-	<main>
-		<div class="card-product">
-			<% products.forEach((product) => { %>
-				<div>
-					<section>
-						<a href="/products/detail/<%= product.id %>">
-							<img src="/images/products/<%= product.image %>" alt="imagem do produto">
-							
-							<article>
-								<p><%= product.name %></p>
-								<h2><%= formatPrice(product.price) %></h2>
-							</article>
-						</a>
-					</section>
-				</div>
-			<% }) %>
+		<div class="banner">
+			<div><h1>conforte-se</h1></div>
 		</div>
-	</main>
-	<%- include('partials/footer.ejs') %>
+
+		<h2 class="products-title">Todos os produtos</h2>
+
+		<main>
+			<% products.forEach((product)=> { %>
+
+				<div class="card-product">
+					
+							<a href="/products/detail/<%= product.id %>">
+								<img src="/images/products/<%= product.image %>" alt="imagem do produto">
+								<div>
+									<p><%= product.name %></p>
+									<h2> <%= formatPrice(product.price) %> </h2>
+								</div>
+							</a>
+				</div>
+				<% if(product.id % 4 === 0){ %>
+					<div class="break"></div>
+				<% } %> 
+				<% }) %>
+		</main>
+		<%- include('partials/footer.ejs') %>
 </body>
 
 </html>

@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detalhes</title>
-    </head>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Detalhes</title>
+	<link rel="stylesheet" href="/css/headerfooter.css">
+	<link rel="stylesheet" href="/css/detail.css">
+</head>
 
 <body>
-	<h2>Detalhe do produto: <%= productFound.name %></h2>
 
-		<div>
-			<img src="/images/products/<%= productFound.image %>" alt="product image">
-			<p><%= productFound.description %></p>
-			
-			<h2><%= productFound.name %></h2>
-			<p><%= formatPrice(productFound.price) %></p>
-			<a href="/products/edit/<%= productFound.id %>">EDITAR PRODUTO</a>
-			
-			<form action="/products/delete/<%= productFound.id %>?_method=DELETE" method="POST">
-				<button type="submit">APAGAR</button>
-			</form>
+	<%- include('partials/header.ejs') %>
+
+		<script>
+			numero = 0;
+
+			function less() {
+				numero--;
+				setValue(numero);
+			}
+
+			function more() {
+				numero++;
+				setValue(numero);
+			}
+
+			function setValue(value) {
+				document.getElementById('num').value = value;
+			}
+
+			setValue(numero);
+		</script>
+		<main>
+			<h1>Informações do produto
+			</h1>
+
+			<section class="productinfo">
+				<img src="/images/products/<%= productFound.image %>" alt="product image">
+
+				<div class="infos">
+					<h2>
+						<%= productFound.name %>
+					</h2>
+					<div>
+
+
+						<p class="description">
+							<%= productFound.description %>
+						</p>
+
+
+						<h1 class="price">
+							<%= formatPrice(productFound.price) %>
+						</h1>
+						<button>ADICIONAR AO CARRINHO</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- <div class="container">
+				<div class="row">
+				  <div class="col-md-12">
+					<button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"aria-hidden="true">-</i></button> &nbsp; <input type="number" name="numero" id="num"> &nbsp; <button type="button" id="mais" onclick="more()">+<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+				  </div>
+				</div>
+			  </div> -->
+
+		<%- include('partials/footer.ejs') %>
 </body>
 
 </html>

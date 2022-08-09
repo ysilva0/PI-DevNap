@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tienne:wght@700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* paleta de cores */
+.verde-dorm { color: #417163; }
+.bege-dorm { color: #F0DBB1; }
+.carbono-dorm { color: #3D3A3A; }
+.neve-dorm { color: #F3F2F2; }
+.cinza-dorm { color: #8D8A8A; }
+.roxo-dorm { color: #785385}
+/*-----------------------*/
+
+
+main{
+    margin: 20px 80px 20px 80px;
+    
+}
+
+.productinfo{
+    display: flex;
+    justify-content: center;
+
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+}
+.description{
+    word-wrap: normal;
+}
+
+.price{
+    margin-top: 20px;
+}

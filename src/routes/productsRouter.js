@@ -5,8 +5,8 @@ const auth = require('../middleware/auth')
 
 const router = express.Router();
 
-router.get("/", auth, ProductsController.index);
-router.get("/detail/:id", auth, ProductsController.details);
+router.get("/", ProductsController.index);
+router.get("/detail/:id", ProductsController.details);
 router.delete("/delete/:id", auth, ProductsController.delete);
 router.get("/edit/:id", auth, ProductsController.edit);
 router.put(
@@ -22,5 +22,4 @@ router.post(
   multerConfig.single("image"),
   ProductsController.save
 );
-
 module.exports = router;
