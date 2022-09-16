@@ -10,5 +10,11 @@
   "name": "Josilene da Silva",
   "email": "josilene@email.com",
   "password": "$2b$12$Ky/0NA4OcQ88Sy6oY8uSZ.HLNyBMCe3jI5pugjJkH8lX04yI8XC2K"
+ },
+ {
+  "id": "2f7b3bba-4c21-40e2-8a14-bafb95da7f10",
+  "name": "admin",
+  "email": "admin@email.com",
+  "password": "$2b$12$gQAwa1AByjcHqmvGpmtMpe1OiuLLF88q.PPcWXzIyIqxPbSnaEgVu"
  }
 ]

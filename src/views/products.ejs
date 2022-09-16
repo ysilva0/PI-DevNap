@@ -20,22 +20,24 @@
 		<h2 class="products-title">Todos os produtos</h2>
 
 		<main>
-			<% products.forEach((product)=> { %>
+			<ul class="product-area">
+				<% products.forEach((product)=> { %>
 
-				<div class="card-product">
-					
-							<a href="/products/detail/<%= product.id %>">
-								<img src="/images/products/<%= product.image %>" alt="imagem do produto">
-								<div>
-									<p><%= product.name %></p>
-									<h2> <%= formatPrice(product.price) %> </h2>
-								</div>
-							</a>
-				</div>
-				<% if(product.id % 4 === 0){ %>
-					<div class="break"></div>
-				<% } %> 
-				<% }) %>
+					<li class="card-product">
+						
+								<a href="/products/detail/<%= product.id %>">
+									<img src="/images/products/<%= product.image %>" alt="imagem do produto">
+									<div>
+										<p><%= product.name %></p>
+										<h2> <%= formatPrice(product.price) %> </h2>
+									</div>
+								</a>
+							</li>
+					<% if(product.id % 4 === 0){ %>
+						<div class="break"></div>
+					<% } %> 
+					<% }) %>
+					</ul>
 		</main>
 		<%- include('partials/footer.ejs') %>
 </body>

@@ -2,10 +2,12 @@ const getInfoDatabase = require('../utils/getInfoDatabase')
 const bcrypt = require('bcrypt')
 const { v4 } = require('uuid')
 const path = require('path')
+const formatPrice = require("../utils/formatPrice");
 const fs = require('fs')
 
 
 const users = getInfoDatabase('users')
+const products = getInfoDatabase("products");
 const pathUsersJSON = path.join(__dirname, "..", "database", "users.json")
 
 const usersController = {
@@ -22,7 +24,18 @@ const usersController = {
     },
 
     cart: (req, res) => {
-        res.render('shoppingCart')
+        const { id } = req.params;
+        const productFound = products.find((product) => {
+            return product.id === Number(id);
+    });
+
+        const userSession = req.user
+
+        res.render('shoppingCart', {
+            productFound,
+            formatPrice,
+            userSession
+        })
     },
     
     login: (req, res) => {

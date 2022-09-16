@@ -34,11 +34,14 @@ main {
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    font-family: "Roboto", cursive;
+   
 }
 .product-area{
-    display: flex;
+    display: flex; 
+    justify-content: space-around;
+    font-family: "Roboto", cursive;
+    max-width: 1360px;
+    flex-wrap: wrap;
 }
 
 .card-product {
@@ -49,6 +52,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 20px 0 20px 0;
+    padding: 0 20px 0px 20px;
 }
 
 .card-product img {
@@ -84,7 +88,8 @@ main {
     
 }
 
-.break{
-    flex-basis: 100%;
-    width: 0;
+.products-title{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 120px;
 }

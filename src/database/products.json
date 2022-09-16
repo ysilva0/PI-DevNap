@@ -4,9 +4,9 @@
   "name": "Sweater: Cachorros dançando",
   "description": "Combine referências vivas neste cardigan. Feito a partir de lã Merino para uma silhueta clássica. \r\nDistingue-se pela sua impressão de animação. ",
   "price": "189",
-  "discount": "5",
-  "category": "in-sale",
-  "image": "1659444855387.png"
+  "discount": "7",
+  "image": "1659040506596.png",
+  "category": "male"
  },
  {
   "id": 2,
@@ -19,29 +19,56 @@
  },
  {
   "id": 3,
-  "name": "Pijama: Felpudo",
-  "description": "Um pijama felpudo e confortável para agraciar-se com a beleza natural de seu lar. Conforto em primeiro lugar.",
-  "price": "399",
-  "discount": "10",
-  "image": "1659445080008.png",
+  "name": "Moletom de lã com meio zíper",
+  "description": "O corpo de lã branca é conscientemente combinado com detalhes de seda cor de cobre. Com meio zíper e bolso com aba, a barra e os punhos da peça são canelados e elásticos. O moletom com capuz é confeccionado em material durável.",
+  "price": "140",
+  "discount": "2",
+  "image": "1662085151828.jpg",
   "category": "male"
  },
  {
   "id": 4,
-  "name": "Sweater: Campo",
-  "description": "Uma arte do campo para você relembrar momentos fora do lar. Com ele você trás a beleza exterior pro seu dia.",
-  "price": "182",
-  "discount": "9",
-  "image": "1659609611897.png",
-  "category": "male"
+  "name": "Robe de Cashmere Aberto na Frente",
+  "description": "Com foco em 'artesanato, detalhe e tecido'. Este manto é cortado em um comprimento maxi com um cinto. Possui decote em V e modelagem em malha canelada. Oferecendo um estilo sofisticado e descontraído.",
+  "price": "470",
+  "discount": "10",
+  "image": "1662085553133.jpg",
+  "category": "female"
  },
  {
   "id": 5,
-  "name": "Calça: Fofa",
-  "description": "Uma calça confortável, ela descreve em conforto o que significa estar em casa.",
-  "price": "229",
-  "discount": "9",
-  "image": "1659609699136.png",
+  "name": "Cardigan com acabamento listrado",
+  "description": "Simples mas eficaz. Modelado para uma silhueta relaxada. Apresenta drapeado nos ombros, transpasse e costura diferenciada nas mangas. Adicione listras para decorar este cardigã.",
+  "price": "459",
+  "discount": "10",
+  "image": "1662085814622.jpg",
+  "category": "female"
+ },
+ {
+  "id": 6,
+  "name": "Vestido de malha Jacquard Driving",
+  "description": "Quando a temperatura cai, você ainda vive em suéter oversize NAP. O vestido suéter longo transmite liberdade de movimentos, feito em mescla de lã merino e detalhes com padrão Jacqaurd.",
+  "price": "299",
+  "discount": "2",
+  "category": "visited",
+  "image": "1662086389929.jpg"
+ },
+ {
+  "id": 7,
+  "name": "Suéter de cashmere gola redonda",
+  "description": "Esta camisola de caxemira é quente, suave ao toque e leve, com um corte ligeiramente descontraído para um look fácil e intemporal.",
+  "price": "239",
+  "discount": "2",
+  "image": "1662087745216.jpg",
+  "category": "female"
+ },
+ {
+  "id": 8,
+  "name": "Pulôver de lã de um quarto com zíper",
+  "description": "Nós desejamos criar uma peça prática para um estilo de vida ativo. O moletom apresenta uma textura de lã de algodão. Em seguida, emoldurado com meio zíper e punho elástico. Aprimorado com gola alta e bolso frontal.",
+  "price": "155",
+  "discount": "22",
+  "image": "1662087914676.jpg",
   "category": "male"
  }
 ]
