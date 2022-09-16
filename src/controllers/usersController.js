@@ -5,13 +5,32 @@ const path = require('path')
 const formatPrice = require("../utils/formatPrice");
 const fs = require('fs')
 
+const { Users } = require('../../models')
+
 
 const users = getInfoDatabase('users')
 const products = getInfoDatabase("products");
 const pathUsersJSON = path.join(__dirname, "..", "database", "users.json")
 
 const usersController = {
-    index: (req, res) =>{
+
+    index: async (req, res) => {
+        try {
+            const users = await Users.findAll()
+            const usersMapped = users.map( user => user.dataValues)
+            return res.json(usersMapped)
+        } catch (error) {
+            return res.json( { error: error.message })
+        }
+
+    // index: (req, res) =>{
+    //     Users.findAll()
+    //         .then(result => {
+    //             const arrayMapped = result.map(user => user.dataValues)
+    //             return res.json(arrayMapped)
+    //         })
+    //         .catch(error => console.log(error))
+
         const userSession = req.user
 
         res.render('user', {

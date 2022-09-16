@@ -1,32 +1,26 @@
-const Sequelize = require('sequelize');
-const database = require('../src/database/db');
+const { allow } = require("joi")
 
-
-const Users = database.define('users', {
-  
-    id: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
-        allowNull: true,
-        primaryKey: true
-    },
-    name: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    email: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    password: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    andress: {
-        type: Sequelize.STRING,
-        allowNull: false
-    }
-    
-});
-
-module.exports = Users;
+module.exports = (sequelize, DataTypes) => {
+    const Users = sequelize.define('Users', {
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        email: {
+            type: DataTypes.STRING(100),
+            allowNull: false,
+            unique: true
+        },
+        password: {
+            type: DataTypes.STRING(1000),
+            allowNull: false
+        }
+    })
+    return Users
+}

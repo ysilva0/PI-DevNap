@@ -941,3 +941,6 @@ A rota /products/detail/1 foi acessada.
 A rota / foi acessada.
 A rota /account foi acessada.
 A rota / foi acessada.
+A rota / foi acessada.
+A rota /favicon.ico foi acessada.
+A rota /account foi acessada.
