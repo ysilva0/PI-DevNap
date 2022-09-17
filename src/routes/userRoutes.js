@@ -6,8 +6,9 @@ const auth = require('../middleware/auth')
 router.get('/', auth, usersController.index)
 router.get('/login', usersController.showLoginPage)
 router.post('/login', usersController.login)
+
 router.get('/register', usersController.showCreateUserPage)
-router.post('/register', usersController.create)
+router.post('/register', usersController.createNewUser)
 router.get('/cart', auth, usersController.cart)
 
 module.exports = router

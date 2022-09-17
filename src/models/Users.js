@@ -1,7 +1,9 @@
 const { allow } = require("joi")
 
 module.exports = (sequelize, DataTypes) => {
-    const Users = sequelize.define('Users', {
+    const alias = 'Users'
+    const collumns = {
+
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -21,6 +23,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(1000),
             allowNull: false
         }
-    })
-    return Users
+    }
+    const config = {
+        tableName: 'users',
+    }
+    const User = sequelize.define(alias, collumns, config);
+    
+    return User
 }
